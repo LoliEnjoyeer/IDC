@@ -1,11 +1,13 @@
 import { configureStore } from '@reduxjs/toolkit'
 import { setupListeners } from '@reduxjs/toolkit/query'
 
-import counterReducer from './features/counter/counterSlice'
+import CounterReducer from './features/counter/CounterSlice'
+import AuthReducer from './features/auth/AuthSlice'
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    counter: CounterReducer,
+    auth: AuthReducer,
   },
 })
 
