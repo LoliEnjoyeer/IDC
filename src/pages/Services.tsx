@@ -39,6 +39,12 @@ export default function Services({ supabase }: ServicesProps) {
 
             <br />
             <br />
+            <Link to={'/Profile'}>
+                <Button colorScheme={'green'}>Profile</Button>
+            </Link>
+
+            <br />
+            <br />
             <Button colorScheme={'red'} onClick={() => LogOut()}>
                 Log Out
             </Button>

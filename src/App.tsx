@@ -19,7 +19,7 @@ const App: React.FC = () => {
                 path="/Services"
                 element={<Services supabase={supabase} />}
             />
-            <Route path="/Profile" element={<Profile />} />
+            <Route path="/Profile" element={<Profile supabase={supabase} />} />
         </Routes>
     )
 }
